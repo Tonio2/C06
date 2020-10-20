@@ -6,7 +6,7 @@
 /*   By: alabalet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 17:50:40 by alabalet          #+#    #+#             */
-/*   Updated: 2020/10/19 20:01:02 by alabalet         ###   ########.fr       */
+/*   Updated: 2020/10/20 11:24:18 by alabalet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		ft_strcmp(char *s1, char *s2)
 	while (s1[cpt])
 	{
 		if (s1[cpt] - s2[cpt])
-			return s1[cpt] - s2[cpt];
+			return (s1[cpt] - s2[cpt]);
 		cpt++;
 	}
 	return (s1[cpt] - s2[cpt]);
@@ -68,4 +68,5 @@ int		main(int argc, char **argv)
 		write(1, "\n", 1);
 		cpt++;
 	}
+	return (0);
 }
